@@ -1,0 +1,26 @@
+{
+    "name": "root/code",
+    "require": {
+        "google/apiclient": "2.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mohammad taheri",
+            "email": "mvtaheri@gmail.com"
+        }
+    ],
+    "extra": {
+        "google/apiclient-services": [
+            "Drive",
+            "Sheets"
+        ]
+    },
+    "scripts": {
+         "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+    }
+}
